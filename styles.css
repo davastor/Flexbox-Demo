@@ -14,6 +14,7 @@ body {
     padding: 24px 128px 64px 128px;
 }
 
+
 .first-container {
     background-color: #1F2937;
     display: flex;
@@ -25,6 +26,11 @@ body {
 }
 
 .second-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0 128px;
+    padding-bottom: 64px;
 
 }
 
@@ -32,35 +38,51 @@ body {
     background-color: #E5E7EB;
 }
 
+.footer-container {
+    color: #f9faf8;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 128px;
+}
+
+.header-links {
+    display:flex;
+    gap: 16px;
+    align-self: center;
+}
+
 a {
     text-decoration: none;
     color: #f9faf8;
-    padding: 16px;
-    margin: 16px 0px;
 }
 
-.hero-button {
-    border: none;
-    border-radius: 5px;
-    background-color: #3882F6;
-    color: #f9faf8;
-    padding: 4px 12px;
-}
 
 .hero-container {
     width: 300px;
-    flex: 1 1 auto;
+    flex: 1 1 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
 }
 
+.image {
+    width: 200px;
+    height: 100px;
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+    flex: 1 1 0;
+    object-fit: cover;
+
+}
+
 .hero-image {
     width: 300px;
     border: 5px solid #3882F6;
     border-radius: 10px;
-    flex: 1 1 auto;
+    flex: 1 1 0;
 }
 
 .hero-main {
@@ -74,4 +96,69 @@ a {
 .header-logo {
     font-size: 26px;
     font-weight: 900;
+}
+
+.image-container {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.content-container {
+    text-align:center;
+    width: 200px;
+    flex: 1 1 0;
+}
+
+.second-header {
+    padding: 32px 128px 32px 128px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+.quote {
+    padding: 64px 128px 16px 128px;
+    font-size: 36px;
+    font-style: light italic;
+    color: #1F2937;
+    text-align: center;
+}
+
+.speaker {
+    font-weight: 900;
+    margin-left:auto;
+    text-align: end;
+    padding: 0px 128px 64px 128px;
+}
+
+.signup-button {
+    border: none;
+    border-radius: 5px;
+    background-color: #3882F6;
+    color: #f9faf8;
+    padding: 4px 24px;
+}
+
+
+.action-background .signup-button { 
+    border: 1px solid white;
+    margin: 6px;
+    padding: 0px 24px;
+    align-items: center;
+}
+
+.action-background {
+    display: flex;
+    border-radius: 5px;
+    background-color: #3882F6;
+    margin: 48px 128px;
+    padding: 32px;
+    gap: 24px;
+    justify-content: space-between;
+    color: #f9faf8;
+}
+
+button:hover {
+    background-color: #022864;
 }
